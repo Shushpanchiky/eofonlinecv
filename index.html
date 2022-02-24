@@ -23,7 +23,7 @@ inputButton.addEventListener('click', handleButtonClick);
 <div class="logo">
 Empire of Freedom
 </div>
-<form>
+<form name="submit-to-google-sheet">
 		<div class="form-item">
       <p class="formLabel">Дискорд ник с цифрами (User#1234)</p>
 			<input type="text" name="zero" id="zero" class="form-style" autocomplete="off"/>
@@ -149,6 +149,22 @@ Empire of Freedom
     if(com == ""){
         alert("Введите ник на мангалиб, пожалуйста");
     }
+	  
+	  
+	  
+
+	
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbyg8Bo8liQ6xqxnFsxAF43WCcGb4eyvrmd-Q3-WmnyqcPyu-i6AuIKtFm_jDGZSmE3g/exec'
+	  const form = document.forms['submit-to-google-sheet']
+
+	  form.addEventListener('submit', e => {
+	    e.preventDefault()
+	    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	      .then(response => console.log('Success!', response))
+	      .catch(error => console.error('Error!', error.message))
+	  })
+
+	  
   }
 </script>
 		<div class="form-item">
