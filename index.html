@@ -14,11 +14,11 @@
   if (type.toLowerCase() === 'POST') {
     params = JSON.stringify(params);
   }
-
+  const formData = new FormData(form);
   const fetchOptions = {
     method: 'POST',
     mode:  'no-cors',    
-    body: new FormData(form)
+    body: formData
   };
 const url = proxyUrl + scriptURL
 fetch(url, fetchOptions);
@@ -26,7 +26,7 @@ alert("!!")
   
   form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch( { mode: 'no-cors' },proxyUrl + scriptURL, { method: 'POST', RequestInit{body: new FormData(form)}})
+    fetch(,proxyUrl + scriptURL, { method: 'POST', mode: 'no-cors', RequestInit{body: new FormData(form)}})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
