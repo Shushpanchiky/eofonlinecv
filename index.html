@@ -21,7 +21,8 @@
     body: new FormData(form)
   };
 const url = proxyUrl + scriptURL
-return fetch(url, fetchOptions);
+fetch(url, fetchOptions);
+alert("!!")
   
   form.addEventListener('submit', e => {
     e.preventDefault()
