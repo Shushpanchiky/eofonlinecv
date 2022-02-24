@@ -102,10 +102,7 @@ Empire of Freedom
 		<div class="form-item">
 		<input type="submit" class="login pull-center" onClick="doing()" value="Отправить анкету" id="input"  name="inputer" >
 		<div class="clear-fix"></div>
-		document.querySelector("#input").onclick = function(){
-  alert("Вы нажали на кнопку");
-}
-   
+			
 		</div>
 
 </form>
@@ -115,6 +112,18 @@ Empire of Freedom
 </body>
 </html>
 
+<script>
+window.onload = init;
+
+function init(){
+    var button = document.getElementById("input")
+    button.onclick = handleButtonClick;
+}
+
+function handleButtonClick() {
+    alert("Вы нажали на кнопку");
+}
+</script>
 
 <script type="text/javascript">
 	
