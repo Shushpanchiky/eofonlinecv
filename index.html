@@ -2,10 +2,14 @@
 
 <form name="submit-to-google-sheet">
   <input name="email" type="email" placeholder="Email" required>
-  <button type="submit">Send</button>
+  <button type="submit" onClick="do()" >Send</button>
 </form>
 
 <script>
+  function do() {
+	
+	
+
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyg8Bo8liQ6xqxnFsxAF43WCcGb4eyvrmd-Q3-WmnyqcPyu-i6AuIKtFm_jDGZSmE3g/exec'
   const form = document.forms['submit-to-google-sheet']
   console.log(form)
@@ -34,6 +38,7 @@ alert(response.status);
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
+  }
 </script>
 </html>
 
