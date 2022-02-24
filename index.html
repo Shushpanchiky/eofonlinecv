@@ -21,7 +21,8 @@ inputB.addEventListener('click', handleButtonClick);
 
  
  const response=fetch(scriptURL, 
-       { 
+       let params: RequestInit = {  
+{ 
 	 method: 'POST', 
 	 mode: 'cors', 
 	 body: (new FormData(form)), // данные могут быть 'строкой' или {объектом}!
