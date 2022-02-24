@@ -10,13 +10,12 @@
   const form = document.forms['submit-to-google-sheet']
 
   var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
-  import fetch, { RequestInit } from 'node-fetch'
-
+ 
   if (type.toLowerCase() === 'POST') {
     params = JSON.stringify(params);
   }
 
-  const fetchOptions = {
+  const fetchOptions = RequestInit {
     method: 'POST',
     mode:  'no-cors',    
     body: new FormData(form)
