@@ -20,10 +20,11 @@ inputB.addEventListener('click', handleButtonClick);
  const url = scriptURL
 
  
- var response=fetch(scriptURL, 
+ const response=fetch(scriptURL, 
        { 
 	 method: 'POST', 
-	 body: JSON.stringify(new FormData(form)), // данные могут быть 'строкой' или {объектом}!
+	 mode: 'cors', 
+	 body: (new FormData(form)), // данные могут быть 'строкой' или {объектом}!
     headers: {
       'Content-Type': 'application/json'
     }
