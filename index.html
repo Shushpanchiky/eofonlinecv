@@ -21,7 +21,7 @@ inputB.addEventListener('click', handleButtonClick);
  const url = scriptURL
 
  
- fetch(scriptURL, 
+ var response=fetch(scriptURL, 
        { 
 	 method: 'POST', 
 	 body: new FormData(form)
@@ -29,6 +29,7 @@ inputB.addEventListener('click', handleButtonClick);
       )
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
+alert(response.status)
   
 
 }
