@@ -31,7 +31,7 @@ alert("!!")
   
   form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(proxyUrl + scriptURL, { method: 'POST', mode: 'no-cors', RequestInit{body: new FormData(form)}})
+    fetch(proxyUrl + scriptURL, { method: 'POST', mode: 'no-cors', body:formData})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
