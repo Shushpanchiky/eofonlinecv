@@ -142,9 +142,15 @@ Empire of Freedom
 			<input type="text" name="eightteen" id="eightteen" class="form-style" autocomplete="off"/>
     </div>
 
-
+<script>
+  function countRabbits() {
+    for(let i=1; i<=3; i++) {
+      alert("Кролик номер " + i);
+    }
+  }
+</script>
 		<div class="form-item">
-		<input type="submit" class="login pull-center" value="Отправить анкету" id="inputButton" onclick="alert('Анкета направлена на обработку. В течение минуты ответ придет в личные сообщения дискорда')" name="inputer" >
+		<input type="submit" class="login pull-center" value="Отправить анкету" id="inputButton" onclick="countRabbits()" name="inputer" >
 		<div class="clear-fix"></div>
 
 
