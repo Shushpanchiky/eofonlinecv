@@ -21,7 +21,7 @@ const url1 = proxyUrl + scriptURL
 const url = scriptURL
 alert(url)
 	
-var responseX = fetch(url, {
+var response = fetch(url, {
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
     mode: 'no-cors', // no-cors, *cors, same-origin
     cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -33,8 +33,8 @@ var responseX = fetch(url, {
  .then(response => console.log('Success!', response))
  .catch(error => console.error('Error!', error.message))
 
-alert(responseX.status)
-console.log(responseX)
+alert(response.status)
+console.log(response)
 	
 	
   }
