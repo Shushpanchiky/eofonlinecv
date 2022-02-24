@@ -1,9 +1,100 @@
 <html>
+	<head>
+<link href="static/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	
   <form name="submit-to-google-sheet">
+<div class="logo">
+Empire of Freedom
+</div>
+	  
    <input name="name" type="name" placeholder="name" required>
   <input name="email1" type="email1" placeholder="Email1" required>
   <input name="email2" type="email2" placeholder="Email2" required>
-  <button type="submit">Send</button>
+<div class="form-item">
+      <p class="formLabel">Дискорд ник с цифрами (User#1234)</p>
+			<input type="text" name="zero" class="form-style" autocomplete="off"/>
+    
+    </div>
+   
+
+
+		<div class="form-item">
+			<p class="formLabel">Как к тебе обращаться (имя, ник)?</p>
+			<input type="text" name="one" class="form-style" autocomplete="off"/>
+    </div>
+
+    <div class="form-item"> 
+			<p class="formLabel">Дата рождения (31.12.2001)</p>
+			<input type="date" name="two" class="form-style" autocomplete="off"/>
+    </div>
+
+    <div class="form-item"> 
+      <labelss>
+			<input type="radio" name="gender" id="gender" value="male"  class="form-choose" checked> <span>Парень</span> </input><input type="radio" name="gender" id="gender" value="female"  class="form-choose"  > <span>Девушка </span></input>
+      </labelss>
+    </div>
+    
+
+
+    <div class="form-item"> 
+      <div id="current_date_time_block1"></div>
+			<p class="formLabel" id="current_date_time_block">Местное время</p>
+			<input type="text" id="five" name="five" class="form-style" autocomplete="off"/>
+    </div>
+
+    <div class="form-item"> 
+			<p class="formLabel" >Опыт в этой сфере (в сканлейте)</p>
+			<input type="text" name="six" class="form-style" autocomplete="off"/>
+    </div>
+
+    <div class="form-item"> 
+			<p class="formLabel" >В каких других командах состоишь?</p>
+			<input type="text" name="seven" class="form-style" autocomplete="off"/>
+    </div>
+
+    <div class="form-item">  
+      <labelss>
+        <input name="vac" value="redactor" type="checkbox" class="form-choose" /> <span>~Редактор (16+)   </span>         
+               
+        <input name="vac" value="taiper" type="checkbox" class="form-choose" /><span>~Тайпер (14+)   </span>
+
+        <input name="vac" value="betatester" type="checkbox" class="form-choose"/><span>~QC (контроль качества) (15+)  </span>
+        
+        <input name="vac" value="translator" type="checkbox" class="form-choose" /><span>~Переводчик (16+)  </span>
+        
+        <input name="vac" value="cleaner" type="checkbox" class="form-choose"/><span>~Клинер (14+)  </span> 
+        </br>
+        <input name="vac" value="editor" type="checkbox" class="form-choose"/><span>~Эдитор (14+)   </span>  
+       <input name="vac" value="zvukar" type="checkbox" class="form-choose"/><span>~Звукарь (15+) </span>
+       <input name="vac" value="zvukar" type="checkbox" class="form-choose"/><span>~Тестировщик (15+) </span>
+      </labelss>
+    </div>
+      
+
+    <div class="form-item"> 
+			<p class="formLabel" >Жанры: хочу/не хочу работать</p>
+			<input type="text" name="fifteen" class="form-style" autocomplete="off"/>
+    </div>
+
+    <div class="form-item"> 
+			<p class="formLabel" >Какой указывать ник в визитке?</p>
+			<input type="text" name="sixteen" class="form-style" autocomplete="off"/>
+    </div>
+
+    <div class="form-item">
+			<p class="formLabel" >Ссылка на свою страницу мангалиба</p>
+			<input type="text" name="seventeen" value="https://mangalib.me/user/" class="form-style" autocomplete="off"/>
+    </div>
+
+
+    <div class="form-item"> 
+			<p class="formLabel" >Откуда узнал о нашей команде?</p>
+			<input type="text" name="eightteen" class="form-style" autocomplete="off"/>
+    </div>
+<div class="form-item">
+  <button type="submit">Отправить анкету</button>
+	<div class="clear-fix"></div>
 </form>
 
 <script>
