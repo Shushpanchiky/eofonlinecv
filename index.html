@@ -6,39 +6,15 @@
 </form>
 
 <script>
-inputB.addEventListener('click', handleButtonClick);
-	
- function handleButtonClick() 
-{
-	
-  const scriptURL = 'https://script.google.com/macros/library/d/1-MvN6nW_s67JOAqGFggIwwiSm2rLYVknQioyAJA2WeJBN18IzBYiqxmN/1'
-  const form = document.forms['submit-to-google-sheet']
-  alert(form)
-	
-  var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
-	 
 
- const url1 = proxyUrl + scriptURL 
- const url = scriptURL
-
- 
- const response=fetch(scriptURL, 
-       let params: RequestInit = {  
-	{ 
-	 method: 'POST', 
-	 mode: 'cors', 
-	 body: (JSON.stringify(new FormData(form))), // данные могут быть 'строкой' или {объектом}!
-	 headers: {'Content-Type': 'application/json'}
-	}
-	      
-				}
-		      )
-      .then(response => console.log('Success!', response.json()))
+const response=form.addEventListener('submit', e => {
+    e.preventDefault() 
+    fetch(proxyUrl + scriptURL , { method: 'POST', mode:  , body:formData})
+      .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
-alert(response.json())
-  
+  })
+alert(response)
 
-}
 </script>
 </html>
 
