@@ -3,8 +3,11 @@
 <head>
 <link href="static/css/style.css" rel="stylesheet" type="text/css">
 
-	<script type="text/javascript">
+<script type="text/javascript">
+	
 function handleButtonClick() {
+	alert("Работает")
+	
 	var text_zero = document.getElementById("zero");
     var Nick = text_zero.value;
     if(Nick == ""){
@@ -42,7 +45,8 @@ function handleButtonClick() {
     }
 	
 }
-input.addEventListener('click', handleButtonClick);
+var button = getElementById("inputButton");
+inputButton.addEventListener('click', handleButtonClick);
 </script>
 	
 </head>
@@ -140,7 +144,7 @@ Empire of Freedom
 
 
 		<div class="form-item">
-		<input type="submit" class="login pull-center" value="Отправить анкету" id="input" onclick="handleButtonClick" name="inputer" >
+		<input type="submit" class="login pull-center" value="Отправить анкету" id="inputButton" name="inputer" >
 		<div class="clear-fix"></div>
 
 
