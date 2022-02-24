@@ -12,9 +12,8 @@
   
   var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
  
-  if (type.toLowerCase() === 'POST') {
-    params = JSON.stringify(params);
-  }
+  params = JSON.stringify(params);
+  
   const formData = new FormData(form);
     console.log(formData)
   const fetchOptions = {
