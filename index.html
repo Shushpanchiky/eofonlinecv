@@ -15,12 +15,8 @@ inputB.addEventListener('click', handleButtonClick);
 
   const scriptURL = 'https://script.google.com/macros/library/d/1-MvN6nW_s67JOAqGFggIwwiSm2rLYVknQioyAJA2WeJBN18IzBYiqxmN/1'
   const form = document.forms['submit-to-google-sheet']
-  console.log(form)
-  
-  
- 
-  
-  
+  var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+
   const formData = new FormData(form);
     console.log(formData)
   const fetchOptions = {   
@@ -33,9 +29,8 @@ inputB.addEventListener('click', handleButtonClick);
 const url1 = proxyUrl + scriptURL
 const url = scriptURL
 let response =  fetch(url, fetchOptions);
-alert(response.status);
   
-	var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+	
   form.addEventListener('submit', e => {
     e.preventDefault() 
     fetch(proxyUrl + scriptURL, { method: 'POST', mode: 'no-cors', body:formData})
