@@ -3,6 +3,47 @@
 <head>
 <link href="static/css/style.css" rel="stylesheet" type="text/css">
 
+	<script type="text/javascript">
+function handleButtonClick() {
+	var text_zero = document.getElementById("zero");
+    var Nick = text_zero.value;
+    if(Nick == ""){
+        alert("Введите дискорд ник, пожалуйста");
+    }
+	
+    var text_one = document.getElementById("one");
+    var Name = text_one.value;
+    if(Name == ""){
+        alert("Введите имя, пожалуйста");
+    }
+	
+    var text_two = document.getElementById("two");
+    var DR = text_two.value;
+    if(DR == ""){
+        alert("Введите дату рождения, пожалуйста");
+    }
+	
+    var text_time = document.getElementById("five");
+    var times = text_time.value;
+    if(times == ""){
+        alert("Введите местное время, пожалуйста");
+    }
+	
+    var text_com = document.getElementById("seven");
+    var com = text_com.value;
+    if(com == ""){
+        alert("Введите описание команд, пожалуйста");
+    }
+	
+    var text_ml = document.getElementById("seventeen");
+    var mangalib = text_ml.value;
+    if(com == ""){
+        alert("Введите ник на мангалиб, пожалуйста");
+    }
+	
+}
+</script>
+	
 </head>
 
 <body>
@@ -112,14 +153,4 @@ Empire of Freedom
 </body>
 </html>
 
-<script type="text/javascript">
-function handleButtonClick() {
-    var textInput = document.getElementById("one");
-    var Name = textInput.value;
-    if(Name == ""){
-        alert("Введите имя, пожалуйста");
-    }else{
-        alert("Считано имя " + Name);
-    }
-}
-</script>
+
