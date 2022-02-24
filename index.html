@@ -10,7 +10,7 @@
 const response=form.addEventListener('submit', e => {
     e.preventDefault() 
     fetch(proxyUrl + scriptURL , { method: 'POST', body:document.forms['submit-to-google-sheet']})
-      .then(response => console.log('Success!', response))
+      .then(response => console.log('Success!', response.text()))
       .catch(error => console.error('Error!', error.message))
   })
 alert(response.text())
