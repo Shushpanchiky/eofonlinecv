@@ -98,7 +98,7 @@ Empire of Freedom
 
 
 		<div class="form-item">
-		<input type="submit" class="login pull-center" value="Отправить анкету" id="input"  name="inputer" >
+		<input type="submit" class="login pull-center" value="Отправить анкету" id="input" onclick="handleButtonClick" name="inputer" >
 		<div class="clear-fix"></div>
 
 
@@ -111,3 +111,15 @@ Empire of Freedom
 
 </body>
 </html>
+
+<script type="text/javascript">
+function handleButtonClick() {
+    var textInput = document.getElementById("one");
+    var Name = textInput.value;
+    if(Name == ""){
+        alert("Введите имя, пожалуйста");
+    }else{
+        alert("Считано имя " + Name);
+    }
+}
+</script>
