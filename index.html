@@ -2,11 +2,13 @@
 
 <form name="submit-to-google-sheet">
   <input name="email" type="email" placeholder="Email" required>
-  <button type="submit" onClick="do()" >Send</button>
+  <button type="submit" name="input" onclick="handleButtonClick" >Send</button>
 </form>
 
 <script>
-  function do() {
+input.addEventListener('click', handleButtonClick);
+	
+  function handleButtonClick() {
 	
 	
 
