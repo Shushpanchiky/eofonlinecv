@@ -27,6 +27,7 @@ inputB.addEventListener('click', handleButtonClick);
 const url1 = proxyUrl + scriptURL
 const url = scriptURL
 let response =  fetch(url, fetchOptions);
+console.log(response.status)
  
 form.addEventListener('submit', e => {
     e.preventDefault() 
