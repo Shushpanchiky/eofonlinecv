@@ -13,7 +13,7 @@ Empire of Freedom
   <input name="email2" type="email2" placeholder="Email2" required>
 <div class="form-item">
       <p class="formLabel">Дискорд ник с цифрами (User#1234)</p>
-			<input type="text" name="zero" class="form-style" autocomplete="off"/>
+			<input type="text" name="zero" class="form-style" autocomplete="off" required/>
     
     </div>
    
@@ -21,17 +21,17 @@ Empire of Freedom
 
 		<div class="form-item">
 			<p class="formLabel">Как к тебе обращаться (имя, ник)?</p>
-			<input type="text" name="one" class="form-style" autocomplete="off"/>
+			<input type="text" name="one" class="form-style" autocomplete="off" required/>
     </div>
 
     <div class="form-item"> 
 			<p class="formLabel">Дата рождения (31.12.2001)</p>
-			<input type="date" name="two" class="form-style" autocomplete="off"/>
+			<input type="date" name="two" class="form-style" autocomplete="off" required/>
     </div>
 
     <div class="form-item"> 
       <labelss>
-			<input type="radio" name="gender" id="gender" value="male"  class="form-choose" checked> <span>Парень</span> </input><input type="radio" name="gender" id="gender" value="female"  class="form-choose"  > <span>Девушка </span></input>
+			<input type="radio" name="gender" requiredid="gender" value="male"  class="form-choose" required checked> <span>Парень</span> </input><input type="radio" name="gender" id="gender" value="female"  class="form-choose"  > <span>Девушка </span></input>
       </labelss>
     </div>
     
@@ -39,8 +39,8 @@ Empire of Freedom
 
     <div class="form-item"> 
       <div id="current_date_time_block1"></div>
-			<p class="formLabel" id="current_date_time_block">Местное время</p>
-			<input type="text" id="five" name="five" class="form-style" autocomplete="off"/>
+			<p class="formLabel" id="current_date_time_block" >Местное время</p>
+			<input type="text" id="five" name="five" class="form-style" autocomplete="off" required/>
     </div>
 
     <div class="form-item"> 
@@ -50,7 +50,7 @@ Empire of Freedom
 
     <div class="form-item"> 
 			<p class="formLabel" >В каких других командах состоишь?</p>
-			<input type="text" name="seven" class="form-style" autocomplete="off"/>
+			<input type="text" name="seven" class="form-style" autocomplete="off" required/>
     </div>
 
     <div class="form-item">  
@@ -79,7 +79,7 @@ Empire of Freedom
 
     <div class="form-item"> 
 			<p class="formLabel" >Какой указывать ник в визитке?</p>
-			<input type="text" name="sixteen" class="form-style" autocomplete="off"/>
+			<input type="text" name="sixteen" class="form-style" autocomplete="off" required/>
     </div>
 
     <div class="form-item">
@@ -104,7 +104,11 @@ Empire of Freedom
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
+      .then(
+	    response => console.log('Success!', response)
+	    alert("Анкета обработана, результат придет в личные сообщений дискорда в течение минуты")
+    
+    )
       .catch(error => console.error('Error!', error.message))
   })
 </script>
