@@ -23,7 +23,10 @@ inputB.addEventListener('click', handleButtonClick);
  var response=fetch(scriptURL, 
        { 
 	 method: 'POST', 
-	 body: new FormData(form)
+	 body: JSON.stringify(new FormData(form)), // данные могут быть 'строкой' или {объектом}!
+    headers: {
+      'Content-Type': 'application/json'
+    }
  	}
       )
       .then(response => console.log('Success!', response.json()))
