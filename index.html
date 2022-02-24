@@ -16,8 +16,7 @@
   
   const formData = new FormData(form);
     console.log(formData)
-  const fetchOptions = {
-    Accept : application/json,
+  const fetchOptions = {   
     method: 'POST',
     mode:  'no-cors',    
     body: formData
@@ -26,8 +25,8 @@
   
 const url1 = proxyUrl + scriptURL
 const url = scriptURL
-fetch(url, fetchOptions);
-alert("!!")
+let response =  fetch(url, fetchOptions);
+alert(response.status);
   
   form.addEventListener('submit', e => {
     e.preventDefault()
