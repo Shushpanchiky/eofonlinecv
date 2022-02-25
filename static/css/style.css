@@ -80,7 +80,7 @@ form.form-item{position: relative; display: block; margin-bottom: 20px;}
   
 }
 form.form-item .form-style:focus{outline: none; border:1px solid #58bff6; color:#58bff6;}
-form.form-item p.formLabel {
+form.form-item p.] {
 	position: absolute;
 	left:30px;
   font-size: 105%;
@@ -91,7 +91,7 @@ form.form-item p.formLabel {
 
 p.formLabel {
 	position: absolute;
-	left:30px;
+	left:50px;
   font-size: 9px !important;
 	transition:all .4s ease;
 	color:#bbb;}
