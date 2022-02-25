@@ -91,7 +91,7 @@ form.form-item p.] {
 
 p.formLabel {
 	position: absolute;
-	left:50px;
+	left:80px;
   font-size: 9px !important;
 	transition:all .4s ease;
 	color:#bbb;}
