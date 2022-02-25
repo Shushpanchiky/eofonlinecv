@@ -43,7 +43,7 @@ div.logo svg{
 	transition:all .3s ease;}
 .darken-bg{background: rgba(0,0,0,.5) !important; transition:all .3s ease;}
 
-div#form{
+form{
 	position: absolute;
 	width:360px;
 	height:320px;
@@ -57,7 +57,7 @@ div#form{
 	margin-left:-180px;
 	/*margin-top:-200px;*/
 }
-div.form-item{position: relative; display: block; margin-bottom: 20px;}
+form.form-item{position: relative; display: block; margin-bottom: 20px;}
  input{transition: all .2s ease;}
  input.form-style{
 	color:#8a8a8a;
@@ -79,8 +79,8 @@ div.form-item{position: relative; display: block; margin-bottom: 20px;}
 	letter-spacing: .8px;
   
 }
-div.form-item .form-style:focus{outline: none; border:1px solid #58bff6; color:#58bff6;}
-div.form-item p.formLabel {
+form.form-item .form-style:focus{outline: none; border:1px solid #58bff6; color:#58bff6;}
+form.form-item p.formLabel {
 	position: absolute;
 	left:30px;
   font-size: 105%;
@@ -143,7 +143,7 @@ label.required:after
 	font-family:'HelveticaNeue','Arial', sans-serif;
 	letter-spacing: .8px;
   font-size: 1pt !important;
-}.div.form-item .form-choose:focus{outline: none; border:1px solid #58bff6; color:#8a8a8a !important;}
+}.form.form-item .form-choose:focus{outline: none; border:1px solid #58bff6; color:#8a8a8a !important;}
 
 
 input[type="radio"] {
